@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c946223ebf1dee9903ceac6e6036d36b",
+    "content-hash": "5a6463d2ba0d1569ca01fb60e27708e9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -306,6 +306,54 @@
                 "source": "https://github.com/cartalyst/tags/tree/v11.1.0"
             },
             "time": "2020-12-22T22:21:56+00:00"
+        },
+        {
+            "name": "codebykyle/calculated-field",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codebykyle/calculated-field.git",
+                "reference": "9216d02c15e0e4d8453ba79b4f1218e50e6548d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codebykyle/calculated-field/zipball/9216d02c15e0e4d8453ba79b4f1218e50e6548d4",
+                "reference": "9216d02c15e0e4d8453ba79b4f1218e50e6548d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codebykyle\\CalculatedField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codebykyle\\CalculatedField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A server side calculated field for Laravel Nova",
+            "keywords": [
+                "calculated",
+                "field",
+                "laravel",
+                "nova",
+                "server-side"
+            ],
+            "support": {
+                "issues": "https://github.com/codebykyle/calculated-field/issues",
+                "source": "https://github.com/codebykyle/calculated-field/tree/1.1"
+            },
+            "time": "2019-10-10T15:13:58+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2774,6 +2822,121 @@
             "time": "2021-04-09T13:42:10+00:00"
         },
         {
+            "name": "optimistdigital/nova-multiselect-field",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optimistdigital/nova-multiselect-field.git",
+                "reference": "96004891946ff1d4e9dd8cd31cb13520eb2c3697"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optimistdigital/nova-multiselect-field/zipball/96004891946ff1d4e9dd8cd31cb13520eb2c3697",
+                "reference": "96004891946ff1d4e9dd8cd31cb13520eb2c3697",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^3.0",
+                "optimistdigital/nova-translations-loader": "^3.0.0",
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "OptimistDigital\\MultiselectField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OptimistDigital\\MultiselectField\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tarvo Reinpalu",
+                    "email": "tarvoreinpalu@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Optimist Digital",
+                    "email": "info@optimistdigital.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A multiple select field for Laravel Nova.",
+            "keywords": [
+                "laravel",
+                "multiselect",
+                "nova",
+                "select"
+            ],
+            "support": {
+                "issues": "https://github.com/optimistdigital/nova-multiselect-field/issues",
+                "source": "https://github.com/optimistdigital/nova-multiselect-field/tree/2.3.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/optimistdigital",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-09-02T14:22:06+00:00"
+        },
+        {
+            "name": "optimistdigital/nova-translations-loader",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/optimistdigital/nova-translations-loader.git",
+                "reference": "d66303a70e0f1c45d60c78a05658011777a00ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/optimistdigital/nova-translations-loader/zipball/d66303a70e0f1c45d60c78a05658011777a00ce7",
+                "reference": "d66303a70e0f1c45d60c78a05658011777a00ce7",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.21 || ^8.0",
+                "laravel/nova": "^3.0",
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "OptimistDigital\\NovaTranslationsLoader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This Laravel Nova package helps developers load translations into their packages.",
+            "keywords": [
+                "laravel",
+                "nova",
+                "optimistdigital",
+                "translations"
+            ],
+            "support": {
+                "issues": "https://github.com/optimistdigital/nova-translations-loader/issues",
+                "source": "https://github.com/optimistdigital/nova-translations-loader/tree/3.1.2"
+            },
+            "time": "2021-06-18T12:46:46+00:00"
+        },
+        {
             "name": "palauaandsons/nova-tags-field",
             "version": "3.0.0",
             "source": {
@@ -3895,6 +4058,51 @@
                 }
             ],
             "time": "2021-08-11T01:06:55+00:00"
+        },
+        {
+            "name": "saumini/count",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nsaumini/nova-field-count.git",
+                "reference": "55db5d804cf5489ccb077b0cef3e2d4202b1acda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nsaumini/nova-field-count/zipball/55db5d804cf5489ccb077b0cef3e2d4202b1acda",
+                "reference": "55db5d804cf5489ccb077b0cef3e2d4202b1acda",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Saumini\\Count\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Saumini\\Count\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/nsaumini/nova-field-count/issues",
+                "source": "https://github.com/nsaumini/nova-field-count/tree/master"
+            },
+            "time": "2018-11-16T16:28:19+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
